@@ -24,13 +24,5 @@ menu = {
     }
 }
 
-# def beverage(beverage, beverage_ingredients, beverage_cost):
-#     new_beverage = {}
-#     new_beverage[menu] = beverage
-#     new_beverage[menu] = beverage_ingredients
-#     new_beverage[menu] = beverage_cost
-#     menu.append(new_beverage)
-
-# beverage("americano", "350 ml water", "3.5")
 
 print(menu['espresso'].items())
