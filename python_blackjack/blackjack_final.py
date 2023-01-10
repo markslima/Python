@@ -8,9 +8,6 @@ def deal_card():
   card = random.choice(cards)
   return card
 
-#Hint 6: Create a function called calculate_score() that takes a List of cards as input 
-#and returns the score. 
-#Look up the sum() function to help you do this.
 def calculate_score(cards):
   """Take a list of cards and return the score calculated from the cards"""
 
