@@ -1,10 +1,3 @@
-# TODO 1. Print Report ✅
-# TODO 2. Check resources sufficient
-# TODO 3. Process coins  ✅
-# TODO 4. Check transaction successful / add money to tiller (if successful)
-# TODO 5. Make coffee / deduct resources
-
-
 from art import logo
 from data import menu
 
@@ -67,22 +60,6 @@ cls()
 print(logo)
 
 coffee = True
-# Espresso
-#   50ml Water
-#   18g Coffee
-#   Cost: $1.50
-#
-# Latte
-#   200ml Water
-#   24g Coffee
-#   150ml Milk
-#   Cost: $2.50
-#
-# Cappuccino
-#   250ml Water
-#   24g Coffee
-#   10ml Milk
-#   Cost: $3.00
 
 def take_order():
     TILLER = 0
@@ -126,8 +103,6 @@ def take_order():
     # Confirmation of payment received
     cash = (quarters * QUARTER) + (dimes * DIME) + (nickels * NICKEL) + (pennies * PENNY)
     print(f"\nOkay that's ${round(cash, 2)} in payment")
-    
-# answer = str(round(answer, 2))
 
     if cash < drink_cost:
         print(f"That's not enough money.")
@@ -144,12 +119,3 @@ def take_order():
 while coffee:
     take_order()
 
-
-# program must process coin payment
-# print("Please insert coins.")
-# print("Sorry, but that's not enough coins. Money refunded.")
-# 1) Print Report
-# 2) Check for sufficient resources
-# 3) Process Coins
-# 4) Check transaction
-# 5) Make coffee
